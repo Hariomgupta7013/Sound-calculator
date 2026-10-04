@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice Calculator</title>
+<link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <h1>Voice Calculator</h1>
+
+        <p class="subtitle">
+            Calculation bolo aur result pao
+        </p>
+
+        <div class="display">
+
+            <div id="expression" class="expression">
+                Ready...
+            </div>
+
+            <div id="result" class="result">
+                0
+            </div>
+
+        </div>
+        <input type="text" id="calculationInput"  class="input-box" placeholder="Example: 25 plus 30">
+        <button id="speakButton" class="speak-btn" type="button">Speak</button>
+        
+        <div>
+            <button id="calculateButton" class="calculate-btn" type="button">Calculate</button>
+            <button id="clearButton" class="clear-btn" type="button"> Clear </button>
+        </div>
+
+
+        <div class="status" id="status">
+            Calculation bolne ke liye Speak button dabao.
+        </div>
+
+
+        <div class="examples">
+            <h3>Try these:</h3>
+            <button class="example-btn" data-calculation="25 plus 30"> 25 + 30 </button>
+            <button class="example-btn" data-calculation="100 minus 25"> 100 - 25 </button>
+            <button class="example-btn" data-calculation="12 multiply by 8"> 12 × 8 </button>
+            <button class="example-btn" data-calculation="144 divided by 12"> 144 ÷ 12</button>
+            <button class="example-btn" data-calculation="50 plus 20 minus 10" >50 + 20 - 10</button>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
